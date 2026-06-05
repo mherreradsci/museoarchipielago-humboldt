@@ -536,6 +536,20 @@ h2 {
 
 .contact-link:hover { color: var(--ocean-light); }
 
+.map-wrap {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(10,79,107,0.12);
+}
+
+.map-wrap iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: var(--deep);
