@@ -112,13 +112,15 @@ nav {
 .hero-eyebrow {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
-  color: var(--seafoam);
+  color: #5fe0cb;
   font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(6,32,51,0.7);
 }
 
 .hero-eyebrow::before {
@@ -604,4 +606,10 @@ footer p {
 @media (max-width: 480px) {
   .gallery-grid { columns: 1; }
   .container { padding: 0 20px; }
+  .hero-content { padding: 0 24px; }
+  .hero-eyebrow {
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+  }
+  .hero-eyebrow::before { display: none; }
 }
