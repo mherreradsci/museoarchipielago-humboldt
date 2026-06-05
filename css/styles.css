@@ -442,6 +442,7 @@ h2 {
 
 .gallery-item img {
   width: 100%;
+  height: auto;
   display: block;
   transition: transform 0.4s ease;
 }
@@ -586,6 +587,7 @@ footer .footer-logo {
 
 footer img {
   height: 48px;
+  width: auto;
   opacity: 0.85;
 }
 
