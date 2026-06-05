@@ -4,7 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Museo Archipiélago de Humboldt — Chungungo, La Higuera</title>
+  <meta name="theme-color" content="#062033">
+  <link rel="canonical" href="https://museoarchipielagodehumboldt.cl/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -12,27 +15,57 @@
   <meta name="description"
   content="Museo Archipiélago de Humboldt en Chungungo. Conservación marina, biodiversidad, arte y educación ambiental en la Región de Coquimbo.">
 
-  <meta property="og:title"
-  content="Museo Archipiélago de Humboldt">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Museo Archipiélago de Humboldt">
+  <meta property="og:description" content="Un museo para proteger, educar y celebrar el Archipiélago de Humboldt.">
+  <meta property="og:image" content="https://museoarchipielagodehumboldt.cl/images/panoramica-chungungo-20260331-144555-2000x708.webp">
+  <meta property="og:url" content="https://museoarchipielagodehumboldt.cl/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Museo Archipiélago de Humboldt">
 
-  <meta property="og:description"
-  content="Un museo para proteger, educar y celebrar el Archipiélago de Humboldt.">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Museo Archipiélago de Humboldt">
+  <meta name="twitter:description" content="Un museo para proteger, educar y celebrar el Archipiélago de Humboldt.">
+  <meta name="twitter:image" content="https://museoarchipielagodehumboldt.cl/images/panoramica-chungungo-20260331-144555-2000x708.webp">
 
-  <meta property="og:image"
-  content="https://museoarchipielagodehumboldt.cl/images/og-image.jpg">
-
-  <meta property="og:type"
-  content="website">
+  <!-- Structured data: Museum -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Museum",
+    "name": "Museo Archipiélago de Humboldt",
+    "description": "Museo en Chungungo dedicado a la conservación marina, biodiversidad, arte y educación ambiental del Archipiélago de Humboldt.",
+    "url": "https://museoarchipielagodehumboldt.cl/",
+    "image": "https://museoarchipielagodehumboldt.cl/images/panoramica-chungungo-20260331-144555-2000x708.webp",
+    "email": "archipielago.museoreservacion@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chungungo",
+      "addressRegion": "Región de Coquimbo",
+      "addressCountry": "CL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -29.4509444,
+      "longitude": -71.2998889
+    }
+  }
+  </script>
 </head>
 <body>
 
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
-      <img src="images/logo.webp" alt="Logo Museo Archipiélago de Humboldt" />
+      <img src="images/logo.webp" alt="Logo Museo Archipiélago de Humboldt" width="1600" height="1600" />
       <span class="nav-brand">Museo Archipiélago<br>de Humboldt</span>
     </a>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#importancia">Importancia</a></li>
       <li><a href="#arte">Arte y Conservación</a></li>
       <li><a href="#galeria">Biodiversidad</a></li>
@@ -87,7 +120,7 @@
   <!-- PANORAMA -->
   <div class="container">
     <div class="panorama-wrap">
-      <img src="images/panoramica-chungungo-20260331-144555-2000x708.webp" alt="Vista panorámica de Chungungo - Marcelo Herrera" />
+      <img src="images/panoramica-chungungo-20260331-144555-2000x708.webp" alt="Vista panorámica de Chungungo - Marcelo Herrera" width="2000" height="708" loading="lazy" />
     </div>
   </div>
 
@@ -126,45 +159,45 @@
 
       <div class="gallery-grid">
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/pinguinos-de-humboldt.webp" alt="Pingüinos de Humboldt" loading="lazy" />
+          <img src="images/pinguinos-de-humboldt.webp" alt="Pingüinos de Humboldt" width="1408" height="768" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Pingüinos de Humboldt</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/3-delfines.webp" alt="Delfines nariz de botella" loading="lazy" />
+          <img src="images/3-delfines.webp" alt="Delfines nariz de botella" width="1408" height="768" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Delfín nariz de botella</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/artista-pintando-lobo-marino.webp" alt="Artista pintando lobo marino" loading="lazy" />
+          <img src="images/artista-pintando-lobo-marino.webp" alt="Artista pintando lobo marino" width="1408" height="768" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Fauna marina del Archipiélago</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/ballena-fin.webp" alt="Ballena Fin" loading="lazy" />
+          <img src="images/ballena-fin.webp" alt="Ballena Fin" width="1376" height="768" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Ballena Fin</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/cachalote.webp" alt="Cachalote" loading="lazy" />
+          <img src="images/cachalote.webp" alt="Cachalote" width="1376" height="768" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Cachalote</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/lobo-familia.webp" alt="Lobo familia" loading="lazy" />
+          <img src="images/lobo-familia.webp" alt="Lobo familia" width="1220" height="1457" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Lobo</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/ballena-azul.webp" alt="Ballena Azul" loading="lazy" />
+          <img src="images/ballena-azul.webp" alt="Ballena Azul" width="1024" height="658" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Ballena azul</span></div>
         </div>
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/nutria-marina-1080x720.webp" alt="Chungungo" loading="lazy" />
+          <img src="images/nutria-marina-1080x720.webp" alt="Chungungo" width="1080" height="720" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Chungungo — nutria marina endémica</span></div>
         </div>
 
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/cola-de-ballena2.webp" alt="Cola de ballena" loading="lazy" />
+          <img src="images/cola-de-ballena2.webp" alt="Cola de ballena" width="1134" height="1295" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Cola de Ballena</span></div>
         </div>
 
         <div class="gallery-item" onclick="openLightbox(this)">
-          <img src="images/flores-desierto-florido.webp" alt="Flores del desierto" loading="lazy" />
+          <img src="images/flores-desierto-florido.webp" alt="Flores del desierto" width="1206" height="1491" loading="lazy" />
           <div class="gallery-overlay"><span class="gallery-caption">Flores del desierto</span></div>
         </div>
 
@@ -289,7 +322,7 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-logo">
-      <img src="images/logo.webp" alt="Logo" />
+      <img src="images/logo.webp" alt="Logo" width="1600" height="1600" loading="lazy" />
       <span class="footer-brand">Museo Archipiélago de Humboldt</span>
     </div>
     <p>Chungungo · La Higuera · Región de Coquimbo<br>Protegiendo la biodiversidad, inspirando a las nuevas generaciones y conectando arte y ciencia.</p>

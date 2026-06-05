@@ -15,6 +15,24 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') closeLightbox();
 });
 
+// Mobile navigation toggle
+const navToggle = document.querySelector('.nav-toggle');
+const navMenu = document.getElementById('nav-links');
+if (navToggle && navMenu) {
+  const setNav = (open) => {
+    navMenu.classList.toggle('open', open);
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+  };
+  navToggle.addEventListener('click', () => {
+    setNav(!navMenu.classList.contains('open'));
+  });
+  // Close the menu after tapping a link
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => setNav(false));
+  });
+}
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 const observer = new IntersectionObserver((entries) => {
