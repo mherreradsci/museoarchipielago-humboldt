@@ -332,6 +332,24 @@ h2 {
 .section-alt .card h3 { color: var(--seafoam); }
 .section-alt .card p { color: rgba(255,255,255,0.7); }
 
+/* ===== VIDEO EMBED ===== */
+.video-wrap {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(10,79,107,0.15);
+}
+
+.video-wrap video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--deep);
+}
+
 /* ===== PANORAMA IMAGE ===== */
 .panorama-wrap {
   width: 100%;
