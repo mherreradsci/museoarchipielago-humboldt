@@ -33,6 +33,11 @@ if (navToggle && navMenu) {
   });
 }
 
+// Reset video to its poster once it finishes playing
+document.querySelectorAll('#quienes-somos video').forEach(v => {
+  v.addEventListener('ended', () => v.load());
+});
+
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-links a');
 const observer = new IntersectionObserver((entries) => {
