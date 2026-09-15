@@ -76,6 +76,20 @@ nav {
 
 .nav-links a:hover { color: var(--seafoam); }
 
+.nav-links a.nav-donate {
+  background: var(--seafoam);
+  color: var(--deep);
+  padding: 9px 18px;
+  border-radius: 4px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.nav-links a.nav-donate:hover {
+  background: #38d4b8;
+  color: var(--deep);
+  transform: translateY(-1px);
+}
+
 /* Hamburger toggle (hidden on desktop) */
 .nav-toggle {
   display: none;
@@ -532,6 +546,52 @@ h2 {
 .lightbox-close:hover { color: var(--white); }
 
 /* ===== VISIT ===== */
+.support-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: var(--ocean);
+  border-radius: 10px;
+  padding: 32px 36px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 24px rgba(10,79,107,0.16);
+}
+
+.support-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.support-text p {
+  color: rgba(255,255,255,0.82);
+  font-size: 15px;
+  max-width: 480px;
+}
+
+.support-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--seafoam);
+  color: var(--deep);
+  padding: 14px 26px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.support-cta:hover {
+  background: #38d4b8;
+  transform: translateY(-2px);
+}
+
 .visit-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -673,10 +733,26 @@ footer p {
     padding: 14px 32px;
     font-size: 14px;
   }
+  .nav-links li.nav-donate-item {
+    display: flex;
+    justify-content: center;
+    padding: 12px 32px 16px;
+  }
+  .nav-links a.nav-donate {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+  }
   .gallery-grid { columns: 2; }
   .visit-grid { grid-template-columns: 1fr; }
   .impact-grid { grid-template-columns: 1fr; }
   .hero { padding-bottom: 60px; }
+  .support-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+  }
+  .support-cta { width: 100%; justify-content: center; }
 }
 
 @media (max-width: 480px) {

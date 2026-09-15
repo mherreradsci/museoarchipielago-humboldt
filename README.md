@@ -48,4 +48,5 @@ python3 -m http.server 8000
 ## Contacto
 
 📍 Chungungo, comuna de La Higuera, Región de Coquimbo, Chile
-✉️ [archipielago.museoreservacion@gmail.com](mailto:archipielago.museoreservacion@gmail.com)
+✉️ [contacto@museoarchipielagodehumboldt.cl](mailto:contacto@museoarchipielagodehumboldt.cl)
+📷 [@museohumboldt](https://www.instagram.com/museohumboldt)
